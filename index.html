@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List with Tailwind</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container bg-[url(/images/background.jpg)] min-w-screen min-h-screen pt-[100px]">
+        <div class="todo-app w-full max-w-xl bg-white rounded-xl mb-[20px] mx-auto pt-10 px-7 pb-16">
+            <h2 class="text-[#002765] text-2xl flex items-center mb-[20px] font-[Poppins]">To-Do List <img src="images/icon.png" class="w-[30px] ml-[10px]"></h2>
+            <div class="row flex items-center justify-between bg-[#edeef0] rounded-3xl pl-[20px] mb-[25px]">
+                <input type="text" class="flex-1 bg-transparent p-[10px] font-normal border-none outline-none" id="input-box" placeholder="Write your Task!">
+                <button class="border-none outline-none py-[16px] px-[50px] bg-[#ff5945] text-white rounded-[40px] cursor-pointer " onclick="addTask()">Add</button>
+            </div>
+            <ul id="list-container">
+                <!-- <li class="check list-none text-[17px] px-[12px] pr-[8px] pl-[50px] cursor-pointer position-relative">Task 1</li> -->
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
